@@ -4,7 +4,6 @@ import (
 	"video-encoder/domain"
 	"github.com/jinzhu/gorm"
 _ "github.com/jinzhu/gorm/dialects/sqlite"
-	"github.com/lib/pq"
 	"log"
 )
 
@@ -24,7 +23,7 @@ func NewDb() *Database {
 	return &Database{}
 }
 
-func NewDbTest() *gorm.Db {
+func NewDbTest() *gorm.DB {
 	dbInstance := NewDb()
 	dbInstance.Env = "Test"
 	dbInstance.DbTypeTest = "sqlite3"
