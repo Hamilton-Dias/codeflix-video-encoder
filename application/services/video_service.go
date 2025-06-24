@@ -3,8 +3,8 @@ package services
 import (
 	"cloud.google.com/go/storage"
 	"context"
-	"encoder/application/repositories"
-	"encoder/domain"
+	"video-encoder/application/repositories"
+	"video-encoder/domain"
 	"io/ioutil"
 	"log"
 	"os"
